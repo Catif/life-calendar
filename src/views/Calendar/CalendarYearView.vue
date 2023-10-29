@@ -2,12 +2,14 @@
 // ==============
 //    Imports
 // ==============
+import { useRoute } from 'vue-router'
 
 
 
 // ==============
 //   Components
 // ==============
+import ListSeasons from '../../components/Calendar/Season/ListSeasons.vue'
 
 
 
@@ -20,7 +22,8 @@
 // ==============
 //   Variables
 // ==============
-
+const route = useRoute()
+const year = route.params.year ?? 'none'
 
 
 // ==============
@@ -37,8 +40,10 @@
 <template>
   <section>
     <h1>
-      Home
+      Year : {{ year }}
     </h1>
+
+    <ListSeasons />
   </section>
 </template>
 

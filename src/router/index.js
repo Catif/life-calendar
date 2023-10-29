@@ -12,7 +12,22 @@ const router = createRouter({
       },
     },
 
-    // New routes here
+    {
+      path: '/calendar',
+      name: 'calendar',
+      component: () => import('@/views/Calendar/CalendarView.vue'),
+      meta: {
+        titlePage: 'Calendar - TemplateVueJS',
+      },
+    },
+    {
+      path: '/calendar/:year',
+      name: 'calendar.year',
+      component: () => import('@/views/Calendar/CalendarYearView.vue'),
+      meta: {
+        titlePage: 'Calendar - TemplateVueJS',
+      },
+    },
 
     {
       // 404 error

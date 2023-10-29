@@ -1,8 +1,9 @@
 <script setup>
+import Calendar from '../../components/Calendar/Calendar.vue'
+
 // ==============
 //    Imports
 // ==============
-
 
 
 // ==============
@@ -37,8 +38,10 @@
 <template>
   <section>
     <h1>
-      Home
+      List of years
     </h1>
+
+    <Calendar />
   </section>
 </template>
 
