@@ -25,7 +25,6 @@ provide('bus', bus)
 /* Animation de transition de page */
 @import "@/assets/scss/animation/fade.scss";
 
-/* template */
 section {
   height: 100%;
 
@@ -33,6 +32,7 @@ section {
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
+  padding: 2rem;
 
   h1 {
     font-size: 3rem;
