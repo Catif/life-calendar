@@ -86,6 +86,17 @@ const sectionsFields = ref([
         </div>
 
         <div class="season__section__fields">
+          <template v-for="field in section.fields" :key="field.id">
+            <LabelInput
+              :id="`${props.season.name}__${field.id}`"
+              v-model="field.value"
+              :label="field.label"
+              class-label="season__section__field__label"
+              class-input="season__section__field__input"
+              :type="field.type"
+              :placeholder="field.placeholder"
+            />
+          </template>
         </div>
       </div>
     </template>
